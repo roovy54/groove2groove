@@ -47,6 +47,12 @@ Clone the repository, then run the following commands.
    ```sh
    pip install './code[gpu]'
    ```
+## Loading the synthetic data for training 
+1. Go to ['synthetic data'](./data/synth/) directory
+2. The links were updated for the dataset so instead of using download.sh directly download it from here https://zenodo.org/records/3958000
+3. After downloading extract it and go to the midi directory and transfer /train, /test and /val to ['synthetic data'](./data/synth/) directory
+4. Now run the updated prepare.sh on train, test and val to preprocess the midi files
+   
 ## Usage
 
 The main entry point of the package is the `groove2groove.models.roll2seq_style_transfer` module, which takes care of training and running the model. Run `python -m groove2groove.models.roll2seq_style_transfer -h` to see the available command line arguments.
